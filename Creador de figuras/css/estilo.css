@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    background-color: #d7d8d8;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+}
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 22px;
+}
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 40px;
+}
+.dropdown {
+    position: relative;
+}
+#botonFigura,
+#eliminar {
+    background-color: #ffffff;
+    border: 2px solid #222;
+    border-radius: 8px;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#botonFigura:hover,
+#eliminar:hover {
+    background-color: #b3aeae;
+}
+.opciones {
+    display: none;
+    position: absolute;
+    background-color: rgb(162, 213, 236);
+    border: 2px solid #222;
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+}
+.opciones.mostrar {
+    display: block;
+}
+.opcion {
+    padding: 15px;
+    font-size: 20px;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 1px solid #aaa;
+}
+.opcion:last-child {
+    border-bottom: none;
+}
+.opcion:hover {
+    background-color: #eeeeee;
+}
+.informacion {
+    margin-top: 35px;
+}
+#contador {
+    font-size: 25px;
+}
+#mensaje {
+    font-size: 20px;
+}
+#pantalla {
+    width: 80%;
+    min-height: 300px;
+
+    margin: 20px auto;
+
+    border: 2px solid #222;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 30px;
+
+    flex-wrap: wrap;
+}
+.figura {
+    width: 180px;
+    height: 180px;
+
+    object-fit: contain;
+}
