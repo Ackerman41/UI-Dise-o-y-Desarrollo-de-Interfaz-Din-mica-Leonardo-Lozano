@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Legends - La Escena del Rock Mundial</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <header class="header border-box">
+      <div class="header-left">
+        <div class="logo-box">
+          <i class="fa-solid fa-guitar"></i>
+        </div>
+        <div class="brand-info">
+          <span class="brand-title">Music Heaven</span>
+          <span class="brand-subtitle">THE ULTIMATE MUSIC PORTAL</span>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <h1>Tu pagina web favortia especializada en Música</h1>
+      </div>
+
+      <div class="header-right">
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar bandas, canciones...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sidebar border-box">
+      <h2>MENÚ PRINCIPAL</h2>
+      
+      <div class="user-profile">
+        <div class="avatar">
+          <i class="fa-solid fa-user-ninja"></i>
+        </div>
+        <div class="user-info">
+          <span class="user-name">Alex Molina</span>
+          <span class="user-role">Fan Premium </span>
+        </div>
+      </div>
+
+      <ul class="menu-list">
+        <li class="menu-item active">
+          <i class="fa-solid fa-house"></i>
+          <span>Inicio</span>
+        </li>
+        <li class="menu-item">
+          <i class="fa-solid fa-record-vinyl"></i>
+          <span>Top Bandas</span>
+        </li>
+        <li class="menu-item">
+          <i class="fa-solid fa-compact-disc"></i>
+          <span>Álbumes Clásicos</span>
+        </li>
+        <li class="menu-item">
+          <i class="fa-solid fa-ticket"></i>
+          <span>Conciertos y Tours</span>
+        </li>
+        <li class="menu-item">
+          <i class="fa-solid fa-users"></i>
+          <span>Integrantes</span>
+        </li>
+        <li class="menu-item">
+          <i class="fa-solid fa-sliders"></i>
+          <span>Ajustes</span>
+        </li>
+        <li class="menu-item logout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Cerrar Sesión</span>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content border-box">
+      <h2>CONTENIDO PRINCIPAL</h2>
+      <div class="top-card">
+        <div class="rock-cover featured-img">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+        <div class="top-card-info">
+          <span class="badge">DESTACADO DE LA SEMANA</span>
+          <h3>Guns N' Roses & AC/DC: Tour de Leyendas 2026</h3>
+          <p>Se confirman las fechas del tour mundial en estadios. Entradas a la venta la próxima semana con bandas invitadas como Foo Fighters y Greta Van Fleet.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+  
+    <div class="card">
+        <div class="card-img-container">
+        <img src="imgs/queen.jpg" alt="Queen" class="card-img">
+        <span class="genre-tag">Hard Rock</span>
+        </div>
+        <h4>Queen</h4>
+        <p>45M oyentes / mes</p>
+        <span class="subtext">"Bohemian Rhapsody"</span>
+    </div>
+
+    <div class="card">
+        <div class="card-img-container">
+        <img src="/imgs/metal.jpg" alt="Metallica" class="card-img">
+        <span class="genre-tag">Heavy Metal</span>
+        </div>
+        <h4>Metallica</h4>
+        <p>28M oyentes / mes</p>
+        <span class="subtext">"Master of Puppets"</span>
+    </div>
+
+    <div class="card">
+        <div class="card-img-container">
+        <img src="/imgs/images.jpg" alt="Nirvana" class="card-img">
+        <span class="genre-tag">Grunge</span>
+        </div>
+        <h4>Nirvana</h4>
+        <p>32M oyentes / mes</p>
+        <span class="subtext">"Smells Like Teen Spirit"</span>
+    </div>
+
+    </div>
+
+      <div class="bottom-card">
+        <h3><i class="fa-solid fa-calendar-days"></i> PRÓXIMOS CONCIERTOS EN VIVO</h3>
+        <table class="tour-table">
+          <thead>
+            <tr>
+              <th>BANDA</th>
+              <th>CIUDAD / ESTADIO</th>
+              <th>FECHA</th>
+              <th>ESTADO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Red Hot Chili Peppers</strong></td>
+              <td>Estadio Azteca, CDMX</td>
+              <td>15 Oct 2026</td>
+              <td><span class="status-badge sold-out">Agotado</span></td>
+            </tr>
+            <tr>
+              <td><strong>The Rolling Stones</strong></td>
+              <td>Wembley Stadium, Londres</td>
+              <td>02 Nov 2026</td>
+              <td><span class="status-badge available">Últimos Boletos</span></td>
+            </tr>
+            <tr>
+              <td><strong>Iron Maiden</strong></td>
+              <td>River Plate, Buenos Aires</td>
+              <td>20 Nov 2026</td>
+              <td><span class="status-badge available">Disponible</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <aside class="right-panel">
+      <div class="stats-box border-box">
+        <h2>ESTADÍSTICAS DEL ROCK</h2>
+        <div class="charts-container">
+          <div class="bar-chart" title="Streams por Género">
+            <div class="bar" style="height: 40%;" title="Classic Rock"></div>
+            <div class="bar" style="height: 75%;" title="Hard Rock"></div>
+            <div class="bar" style="height: 95%;" title="Heavy Metal"></div>
+            <div class="bar" style="height: 60%;" title="Grunge"></div>
+          </div>
+          <div class="pie-chart" title="Distribución de Éxitos"></div>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-val">120K</span>
+            <span class="metric-lbl">Streams</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">4.9★</span>
+            <span class="metric-lbl">Rating</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">850</span>
+            <span class="metric-lbl">Shows</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-val">15M</span>
+            <span class="metric-lbl">Fans</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-box border-box">
+        <h2>ACTIVIDAD RECIENTE</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="avatar-sm"><i class="fa-solid fa-user-astronaut"></i></div>
+            <div class="act-details">
+              <strong>Carlos R.</strong> asistió al show de <em>Metallica</em>
+            </div>
+            <span class="time-tag">Hace 5m</span>
+          </div>
+          <div class="activity-item">
+            <div class="avatar-sm"><i class="fa-solid fa-user-ninja"></i></div>
+            <div class="act-details">
+              <strong>Sofia M.</strong> calificó 5★ <em>"Dark Side of the Moon"</em>
+            </div>
+            <span class="time-tag">Hace 20m</span>
+          </div>
+          <div class="activity-item">
+            <div class="avatar-sm"><i class="fa-solid fa-guitar"></i></div>
+            <div class="act-details">
+              <strong>Diego K.</strong> agregó a <em>Queen</em> a sus favoritos
+            </div>
+            <span class="time-tag">Hace 1h</span>
+          </div>
+          <div class="activity-item">
+            <div class="avatar-sm"><i class="fa-solid fa-drum"></i></div>
+            <div class="act-details">
+              <strong>Elena V.</strong> compró entradas para <em>AC/DC</em>
+            </div>
+            <span class="time-tag">Hace 3h</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+
+    <footer class="footer border-box">
+      <div class="footer-left">
+        <span class="footer-logo"> Music Web</span>
+        <p>© 2026 Todos los derechos reservados.</p>
+      </div>
+      <div class="footer-center">
+        <h2>PIE DE PÁGINA</h2>
+        <div class="footer-links">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Contacto</a>
+          <a href="#">Prensa</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

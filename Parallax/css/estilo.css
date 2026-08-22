@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-parallax{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeeb7;
+}
+
+.contenedor-parallax img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transition: ease-in;
+}
+
+#perrito{
+    width: 28%;
+    bottom: 0;
+}
+
+#titulo{
+    position: absolute;
+    top: 25%;
+    right: 0;
+
+    transform: translateY("-50%");
+    font-size: 10hv;
+
+    z-index: 100;
+    margin: 2vh;
+
+    color: brown;
+    text-shadow: 5px 0px 0px black;
+}
+
+main{
+    height: 100vh;
+}

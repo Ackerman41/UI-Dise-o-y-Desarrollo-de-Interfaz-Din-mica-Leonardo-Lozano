@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    height: 100%;
+    background-color: lightblue;
+}
+
+header nav ul{
+    display: flex;
+    border: solid 2px black;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li span{
+    color: black;
+    font-size: 25px;
+}
+
+main{
+    grid-area: main;
+    height: 100%;
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
+    gap: 20px;
+}
+
+main div{
+    border: solid 2px black;
+}
+
+footer{
+    grid-area: footer;
+    height: 100%;
+    background-color: lightgray;
+}
