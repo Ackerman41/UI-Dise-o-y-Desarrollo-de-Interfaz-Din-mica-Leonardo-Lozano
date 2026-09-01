@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overwatch</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img src="img/overwatch-logo-png-1611.png" alt="Overwatch Logo" class="nav-logo">
+      <span>OVERWATCH</span>
+    </div>
+    
+    <div class="nav-menu-container">
+      <button class="dropdown-btn" id="menuToggle">MENÚ ☰</button>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#grid-section">Base de Héroes</a>
+        <a href="#squad-section">Creador de Escuadrón</a>
+        <a href="#waapi-section">Control de Carga</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="parallax-container">
+    <div class="parallax-layer layer-bg" id="layerBg"></div>
+    <div class="parallax-layer layer-mid" id="layerMid"></div>
+    <div class="parallax-layer layer-front" id="layerFront">
+      <img src="img/overwatch-logo.png" alt="Overwatch Logo" class="parallax-logo">
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <section class="grid-section" id="grid-section">
+      <h2 class="section-title">BIENVENIDO A OVERWATCH HQ</h2>
+      <p class="section-subtitle">GUÍA DE CAMPO OPERATIVA</p>
+
+      <div class="grid-heroes">
+        <article class="card card-red">
+          <div class="card-image-header">
+            <img src="img/kiriko.webp" alt="Kiriko" class="hero-img">
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">KIRIKO</h3>
+            <p class="card-desc">Canaliza el espíritu del Kitsune para sanar y proteger a sus aliados con kunais tácticos.</p>
+            <button class="card-btn">Ver Detalles</button>
+          </div>
+        </article>
+
+        <article class="card card-cyan">
+          <div class="card-image-header">
+            <img src="img/rein.webp" alt="Reinhardt" class="hero-img">
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">REINHARDT</h3>
+            <p class="card-desc">Defensor embozado en una armadura propulsada con martillo de cohete y barrera protectora.</p>
+            <button class="card-btn">Ver Detalles</button>
+          </div>
+        </article>
+
+        <article class="card card-green">
+          <div class="card-image-header">
+            <img src="img/genji.webp" alt="Genji" class="hero-img">
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">GENJI</h3>
+            <p class="card-desc">Ninja cibernético de alta agilidad domina la hoja dragón y shurikens de precisión.</p>
+            <button class="card-btn">Ver Detalles</button>
+          </div>
+        </article>
+
+        <article class="card card-pink">
+          <div class="card-image-header">
+            <img src="img/OW_Dva.webp" alt="D.Va" class="hero-img">
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">D.VA</h3>
+            <p class="card-desc">Exjugadora profesional que pilota un meca militar avanzado con matriz de defensa.</p>
+            <button class="card-btn">Ver Detalles</button>
+          </div>
+        </article>
+
+        <article class="card card-yellow">
+          <div class="card-image-header">
+            <img src="img/mercy.webp" alt="Mercy" class="hero-img">
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">MERCY</h3>
+            <p class="card-desc">Doctora y guardiana equipada con el traje Valkyrie para sanar y resucitar aliados.</p>
+            <button class="card-btn">Ver Detalles</button>
+          </div>
+        </article>
+
+        <article class="card card-orange">
+          <div class="card-image-header">
+            <img src="img/tracer.webp" alt="Tracer" class="hero-img">
+          </div>
+          <div class="card-body">
+            <h3 class="card-name">TRACER</h3>
+            <p class="card-desc">Piloto temporal capaz de acelerar, trasladarse y rebobinar su propio tiempo en combate.</p>
+            <button class="card-btn">Ver Detalles</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="interactive-zone" id="squad-section">
+      <h2 class="section-title">DESPLIEGUE DE ESCUADRÓN</h2>
+      <p class="section-subtitle">MÁXIMO 5 AGENTES EN PANTALLA</p>
+
+      <div class="controls-bar">
+        <select id="heroSelect" class="btn-input">
+          <option value="Kiriko">Kiriko</option>
+          <option value="Reinhardt">Reinhardt</option>
+          <option value="Genji">Genji</option>
+          <option value="D.Va">D.Va</option>
+          <option value="Mercy">Mercy</option>
+          <option value="Tracer">Tracer</option>
+        </select>
+        <button class="btn btn-primary" id="btnAdd">Agregar Héroe</button>
+        <button class="btn btn-danger" id="btnRemoveLast">Eliminar Último</button>
+      </div>
+
+      <div class="status-panel">
+        <p>Héroes activos: <span id="itemCount">0</span> / 5</p>
+        <p>Estado: <span id="statusMessage">Selecciona un héroe para añadir al escuadrón</span></p>
+      </div>
+
+      <div class="squad-list" id="squadList"></div>
+    </section>
+
+    <section class="waapi-zone" id="waapi-section">
+      <h2 class="section-title">CONTROL DE TRANSPORTE DE CARGA</h2>
+      <p class="section-subtitle">ANIMACIÓN CON JAVASCRIPT</p>
+
+      <div class="track">
+        <div class="payload" id="payload">
+          <img src="img/Icon-Jetpack_Cat.webp" alt="Carga" class="payload-img">
+        </div>
+      </div>
+
+      <div class="controls-bar flex-center">
+        <button class="btn" id="btnPlay">Reproducir</button>
+        <button class="btn" id="btnPause">Pausar</button>
+        <button class="btn" id="btnReverse">Revertir</button>
+        <button class="btn btn-danger" id="btnCancel">Cancelar</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© Blizzard Entertainment - Overwatch Fan Page</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
