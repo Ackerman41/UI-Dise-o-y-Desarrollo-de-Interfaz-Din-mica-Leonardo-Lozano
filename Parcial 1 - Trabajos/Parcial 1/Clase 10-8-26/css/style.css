@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.contador-imagenes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 50vh;
+    border: solid 2px black;
+    margin-top: 50px;
+}
+
+.contenedor img{
+    height: 50%;   
+}
+
+.mensaje-error {
+    display: none;
+    color: red;
+    margin-top: 10px;
+}
+
+.mensaje-error.mostrar {
+    display: block;
+}

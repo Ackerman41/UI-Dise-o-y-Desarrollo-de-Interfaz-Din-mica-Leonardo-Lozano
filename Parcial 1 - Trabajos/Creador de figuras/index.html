@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Personajes</title>
+
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+
+<body>
+    <h1>Selector de Personajes Overwatch</h1>
+    <p>Selecciona a tu Héroe para agregarla a la pantalla</p>
+    <div class="controles">
+        <div class="dropdown">
+            <button id="botonFigura">Agregar Héroe
+            </button>
+            <div id="opciones" class="opciones">
+                <div class="opcion" data-figura="Cassidy">
+                    Cassidy
+                </div>
+                <div class="opcion" data-figura="Shion">
+                    Shion
+                </div>
+                <div class="opcion" data-figura="Ramattra">
+                    Ramattra
+                </div>
+            </div>
+        </div>
+        <button id="eliminar"> Eliminar Héroe
+        </button>
+    </div>
+    <div class="informacion">
+        <strong id="contador">
+            Heroe: 0 de 5
+        </strong>
+        <p id="mensaje">
+            Selecciona un Héroe
+        </p>
+    </div>
+    <div id="pantalla"></div>
+    <script src="/js/creador.js"></script>
+</body>
+</html>

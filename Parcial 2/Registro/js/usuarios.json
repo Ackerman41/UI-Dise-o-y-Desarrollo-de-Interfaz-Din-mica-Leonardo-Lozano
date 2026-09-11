@@ -1,0 +1,54 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Ana López",
+      "correo": "ana.lopez@example.com",
+      "contrasena": "Luna#4821"
+    },
+    {
+      "nombre": "Carlos Martínez",
+      "correo": "carlos.martinez@example.com",
+      "contrasena": "Sol@7392"
+    },
+    {
+      "nombre": "María González",
+      "correo": "maria.gonzalez@example.com",
+      "contrasena": "Nube$6154"
+    },
+    {
+      "nombre": "Jorge Ramírez",
+      "correo": "jorge.ramirez@example.com",
+      "contrasena": "Rio!9273"
+    },
+    {
+      "nombre": "Laura Hernández",
+      "correo": "laura.hernandez@example.com",
+      "contrasena": "Flor#3518"
+    },
+    {
+      "nombre": "Diego Torres",
+      "correo": "diego.torres@example.com",
+      "contrasena": "Azul@8642"
+    },
+    {
+      "nombre": "Sofía Navarro",
+      "correo": "sofia.navarro@example.com",
+      "contrasena": "Estrella$2947"
+    },
+    {
+      "nombre": "Miguel Castillo",
+      "correo": "miguel.castillo@example.com",
+      "contrasena": "Fuego!5836"
+    },
+    {
+      "nombre": "Valentina Cruz",
+      "correo": "valentina.cruz@example.com",
+      "contrasena": "Mar#7165"
+    },
+    {
+      "nombre": "Daniel Flores",
+      "correo": "daniel.flores@example.com",
+      "contrasena": "Bosque@4398"
+    }
+  ]
+}
