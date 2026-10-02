@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Videojuegos & Usuarios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navegación superior -->
+        <header id="nav-header" class="hidden">
+            <div class="user-badge">
+                <img id="header-avatar" src="" alt="Avatar">
+                <span id="header-username"></span>
+            </div>
+            <nav>
+                <button id="btn-nav-feed">Juegos Gratis</button>
+                <button id="btn-nav-perfil">Mi Perfil</button>
+                <button id="btn-nav-logout" class="btn-danger">Cerrar Sesión</button>
+            </nav>
+        </header>
+
+        <!-- Contenedor principal de vistas -->
+        <main id="main-content">
+            <!-- Vista Iniciar Sesión -->
+            <section id="view-login" class="card">
+                <h2>Iniciar Sesión</h2>
+                <form id="form-login">
+                    <label for="login-correo">Correo electrónico</label>
+                    <input type="email" id="login-correo" required placeholder="ejemplo@uacj.mx">
+
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" required placeholder="******">
+
+                    <button type="submit" class="btn-primary">Ingresar</button>
+                </form>
+                <p>¿No tienes una cuenta? <a href="#" id="link-ir-registro">Regístrate aquí</a></p>
+                <div id="login-msg" class="msg"></div>
+            </section>
+
+            <!-- Vista Registro (Generada dinámicamente desde JS) -->
+            <section id="view-registro" class="card hidden"></section>
+
+            <!-- Vista Principal / Feed (FreeToGame) -->
+            <section id="view-feed" class="hidden">
+                <h2>Catálogo de Juegos Gratuitos</h2>
+                <p>Videojuegos obtenidos en tiempo real de FreeToGame API:</p>
+                <div id="api-cards-container" class="grid-cards"></div>
+            </section>
+
+            <!-- Vista Perfil -->
+            <section id="view-perfil" class="card hidden">
+                <h2>Mi Perfil</h2>
+                <form id="form-perfil">
+                    <div class="avatar-preview">
+                        <img id="perfil-avatar-preview" src="" alt="Foto de perfil">
+                    </div>
+
+                    <label for="perfil-nombre">Nombre de Usuario</label>
+                    <input type="text" id="perfil-nombre" required>
+
+                    <label for="perfil-correo">Correo Electrónico</label>
+                    <input type="email" id="perfil-correo" required>
+
+                    <label for="perfil-password">Nueva Contraseña</label>
+                    <input type="password" id="perfil-password" placeholder="Mínimo 6 caracteres">
+
+                    <label for="perfil-foto">URL de Foto (Opcional)</label>
+                    <input type="url" id="perfil-foto" placeholder="https://picsum.photos/150">
+
+                    <button type="submit" class="btn-primary">Guardar Cambios</button>
+                </form>
+                <div id="perfil-msg" class="msg"></div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="/js/app.js"></script>
+</body>
+</html>
